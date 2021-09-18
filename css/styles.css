@@ -10438,7 +10438,6 @@ body {
 }
 
 .solutions-section {
-  padding: 5rem 0;
   background: linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.8) 100%);
 }
 
@@ -10447,6 +10446,10 @@ body {
 }
 
 @media (min-width: 992px) {
+  .solutions-section {
+    padding: 5rem 0;
+  }
+
   .solutions-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;

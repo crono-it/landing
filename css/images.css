@@ -1,0 +1,25 @@
+.about-us-image {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  align-items: center;
+}
+
+.about-us-image > div {
+  text-align: center;
+}
+
+.about-us-image__description {
+  display: grid;
+}
+
+.about-us-image__description :first-child {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-image {
+    grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  }
+}
