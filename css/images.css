@@ -18,8 +18,18 @@
   font-weight: bolder;
 }
 
+.about-us-image img {
+  width: 50%;
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 768px) {
   .about-us-image {
     grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  }
+
+  .about-us-image img {
+    width: 30%;
+    border-radius: 50%;
   }
 }
