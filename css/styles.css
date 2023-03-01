@@ -10,6 +10,13 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -2857,7 +2864,9 @@ textarea.form-control-lg {
   border-bottom-right-radius: 0;
 }
 .input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(
+    .invalid-feedback
+  ) {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -11605,16 +11614,6 @@ fieldset:disabled .btn {
   }
 }
 
-html {
-  scroll-padding-top: 4.5rem;
-  scroll-behavior: smooth;
-}
-
-body {
-  position: relative;
-  overflow-x: hidden;
-}
-
 p {
   line-height: 1.75;
 }
@@ -12077,8 +12076,8 @@ header.masthead .masthead-heading {
 }
 
 .team-member img {
-  width: 14rem;
-  height: 14rem;
+  width: 10em;
+  height: 10em;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 
