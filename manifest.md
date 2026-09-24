@@ -1,4 +1,4 @@
-# Principios de Crono IT
+# Manifiesto de Crono IT
 
 Crono IT busca crear tecnología a partir de la experiencia, la colaboración y el aprendizaje compartido.
 
