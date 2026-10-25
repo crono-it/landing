@@ -1,0 +1,37 @@
+/* REFLECTIONS — estilos propios y responsive */
+#reflexiones {
+  & .cards.reflections {
+    grid-template-columns:repeat(3,minmax(0,1fr))
+  }
+
+  & .reflection-card {
+    background:#fff;border:1px solid #e5e0ec;border-radius:18px;padding:30px;display:flex;flex-direction:column;min-height:280px
+  }
+
+  & .reflection-card>span {
+    color:#6e3eaf;font-size:.75rem;text-transform:uppercase;letter-spacing:.13em;font-weight:750;margin-bottom:22px
+  }
+
+  & .reflection-card p {
+    color:#655f70
+  }
+
+  & .reflection-card small {
+    margin-top:auto;color:#6d477f;font-weight:700
+  }
+
+  & .section-note {
+    margin-top:22px;color:#686174;font-size:.87rem
+  }
+
+  @media(max-width:900px) {
+    & .cards.reflections {
+      grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+  }
+  @media(max-width:640px) {
+    & .cards.reflections {
+      grid-template-columns:1fr
+    }
+  }
+}
