@@ -101,27 +101,35 @@
 
   & .orbit-label {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
     font-size: 0.75rem;
     letter-spacing: 0.06em;
+    white-space: nowrap;
     background: #242035;
     border: 1px solid #7c5d9d66;
     padding: 8px 12px;
     border-radius: 30px;
+
+    offset-path: ellipse(46% 31% at 50% 50%);
+    offset-anchor: center;
+    offset-rotate: 0deg;
+
+    animation: orbit-motion 30s linear infinite;
   }
 
   & .label-one {
-    top: 12%;
-    right: 5%;
+    animation-delay: 0s;
   }
 
   & .label-two {
-    bottom: 14%;
-    left: 0;
+    animation-delay: -10s;
   }
 
   & .label-three {
-    bottom: 18%;
-    right: 0;
+    animation-delay: -20s;
   }
 
   & .hero-bottom {
@@ -161,9 +169,6 @@
     & .orbit-label {
       font-size: 0.65rem;
     }
-    & .label-two {
-      left: -5%;
-    }
   }
 }
 
@@ -176,6 +181,35 @@
       height: auto;
       object-fit: contain;
       transform: rotate(12deg);
+      margin-right: 1em;
     }
+  }
+}
+
+@keyframes orbit-motion {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .orbit-label {
+    animation: none;
+  }
+
+  .hero .label-one {
+    offset-distance: 0%;
+  }
+
+  .hero .label-two {
+    offset-distance: 33.333%;
+  }
+
+  .hero .label-three {
+    offset-distance: 66.666%;
   }
 }
