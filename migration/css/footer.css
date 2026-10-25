@@ -37,11 +37,18 @@
   }
 
   & .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 20px;
-    font-size: 0.85rem;
-    color: #c9c3d5;
+    button {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+
+      &:hover {
+        color: #c5a5ff;
+      }
+    }
   }
 
   @media (max-width: 900px) {
