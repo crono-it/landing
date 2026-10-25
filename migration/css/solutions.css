@@ -1,29 +1,36 @@
 /* SOLUTIONS — estilos propios y responsive */
-#soluciones {
+#solutions {
   & .cards.three {
-    grid-template-columns:repeat(3,minmax(0,1fr))
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   & .info-card {
-    border:1px solid rgba(255, 255, 255, 0.12);border-radius:20px;padding:32px;background:#ffffff06;min-height:250px
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 32px;
+    background: #ffffff06;
+    min-height: 250px;
   }
 
   & .info-card p {
-    color:#b7b4c6
+    color: #b7b4c6;
   }
 
   & .card-number {
-    display:block;color:#b58aef;font-size:.85rem;margin-bottom:35px
+    display: block;
+    color: #b58aef;
+    font-size: 0.85rem;
+    margin-bottom: 35px;
   }
 
-  @media(max-width:900px) {
+  @media (max-width: 900px) {
     & .cards.three {
-      grid-template-columns:repeat(2,minmax(0,1fr))
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  @media(max-width:640px) {
+  @media (max-width: 640px) {
     & .cards.three {
-      grid-template-columns:1fr
+      grid-template-columns: 1fr;
     }
   }
 }

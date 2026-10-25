@@ -1,31 +1,89 @@
-/* ALLIANCES — estilos propios y responsive */
-#alianzas {
-  & .partner-card {
-    display:flex;align-items:center;gap:40px;padding:32px;border:1px solid rgba(255, 255, 255, 0.12);border-radius:20px;max-width:800px
+/* ALLIANCES — estilos de la sección y su comportamiento responsive */
+.alliances {
+  .partner-card {
+    max-width: 900px;
+    padding: clamp(24px, 4vw, 42px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
   }
 
-  & .partner-logo {
-    width:150px;min-width:150px;aspect-ratio:1;display:grid;place-items:center;background:#fff;border-radius:14px;padding:20px
-  }
+  .partner-heading {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 
-  & .partner-logo img {
-    max-height:100%;object-fit:contain
-  }
+    .partner-logo {
+      width: 150px;
+      min-width: 150px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      border-radius: 14px;
+      background: #fff;
 
-  & .partner-card p {
-    color:#b7b4c6
-  }
-
-  & .light-link {
-    color:#c8a6ff
-  }
-
-  @media(max-width:640px) {
-    & .partner-card {
-      flex-direction:column;align-items:flex-start;gap:20px
+      img {
+        max-height: 100%;
+        object-fit: contain;
+      }
     }
-    & .partner-logo {
-      width:120px;min-width:120px
+
+    p {
+      color: #b7b4c6;
+    }
+    .light-link {
+      color: #c8a6ff;
+    }
+  }
+
+  .partner-testimonial {
+    margin: 32px 0 0;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    blockquote {
+      margin: 0 0 24px;
+      color: #f2edf9;
+      font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+      line-height: 1.65;
+    }
+
+    figcaption {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      img {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      span {
+        display: flex;
+        flex-direction: column;
+      }
+      strong {
+        color: #fff;
+      }
+      small {
+        color: #b7b4c6;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .partner-heading {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      .partner-logo {
+        width: 120px;
+        min-width: 120px;
+      }
     }
   }
 }

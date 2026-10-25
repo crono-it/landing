@@ -1,5 +1,5 @@
 const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('#menu-principal');
+const nav = document.querySelector('#main-menu');
 
 function closeMenu() {
   nav.classList.remove('is-open');

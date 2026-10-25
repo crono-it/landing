@@ -1,45 +1,57 @@
 /* FOOTER — estilos propios y responsive */
 .site-footer {
   & .footer-brand strong {
-    color:#a879f8
+    color: #a879f8;
   }
 
   & .footer-links a:hover {
-    color:#c5a5ff
+    color: #c5a5ff;
   }
 
   & {
-    padding-block:55px;background:#0d0c15;border-top:1px solid rgba(255, 255, 255, 0.12)
+    padding-block: 55px;
+    background: #0d0c15;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   & .footer-inner {
-    display:grid;grid-template-columns:1fr 1fr auto;gap:28px;align-items:start
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 28px;
+    align-items: start;
   }
 
   & .footer-brand {
-    font-weight:800;font-size:1.35rem
+    font-weight: 800;
+    font-size: 1.35rem;
   }
 
   & .footer-inner p {
-    color:#aaa5ba;font-size:.83rem
+    color: #aaa5ba;
+    font-size: 0.83rem;
   }
 
   & .footer-inner small {
-    color:#aaa5ba;font-size:.83rem
+    color: #aaa5ba;
+    font-size: 0.83rem;
   }
 
   & .footer-links {
-    display:flex;flex-wrap:wrap;gap:12px 20px;font-size:.85rem;color:#c9c3d5
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    font-size: 0.85rem;
+    color: #c9c3d5;
   }
 
-  @media(max-width:900px) {
+  @media (max-width: 900px) {
     & .footer-inner {
-      grid-template-columns:1fr 1fr
+      grid-template-columns: 1fr 1fr;
     }
   }
-  @media(max-width:640px) {
+  @media (max-width: 640px) {
     & .footer-inner {
-      grid-template-columns:1fr
+      grid-template-columns: 1fr;
     }
   }
 }
