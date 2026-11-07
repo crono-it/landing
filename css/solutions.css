@@ -1,7 +1,7 @@
 /* SOLUTIONS — estilos propios y responsive */
 #solutions {
   & .cards.three {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   & .info-card {
@@ -23,11 +23,6 @@
     margin-bottom: 35px;
   }
 
-  @media (max-width: 900px) {
-    & .cards.three {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   @media (max-width: 640px) {
     & .cards.three {
       grid-template-columns: 1fr;
